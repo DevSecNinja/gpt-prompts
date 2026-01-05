@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate index
         run: |
-          cat > INDEX.md << 'EOF'
+          cat > INDEX.md << EOF
           # 📑 Prompt Index
           
           > Auto-generated index of all available prompts

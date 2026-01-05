@@ -39,6 +39,6 @@ jobs:
             - ✅ The filename uses lowercase-with-hyphens format
             - ✅ You've tested the prompt and it produces useful results
             
-            Check out [CONTRIBUTING.md](https://github.com/DevSecNinja/gpt-prompts/blob/main/CONTRIBUTING.md) for detailed guidelines.
+            Check out [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) for detailed guidelines.
             
             Thanks again for making this collection better! 🚀
