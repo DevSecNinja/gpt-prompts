@@ -4,7 +4,7 @@
 
 [Brief 1-2 sentence description of what this prompt does]
 
-## AI Model (Optional)
+## AI Model
 
 [Specify the AI model this prompt was designed for or tested with. Examples:
 
@@ -43,7 +43,7 @@ Or a simpler format:
 - [tag2]
 - [tag3]
 
-## Credits (Optional)
+## Credits
 
 [Attribution for the prompt creator(s) or sources. Examples:
 
@@ -52,6 +52,6 @@ Or a simpler format:
 - Contributors: [Names]
 ]
 
-## Notes (Optional)
+## Notes
 
 [Any additional context, variations, or tips for using this prompt]

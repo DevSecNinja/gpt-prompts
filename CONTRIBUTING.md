@@ -24,7 +24,7 @@ Copy [`PROMPT_TEMPLATE.md`](/PROMPT_TEMPLATE.md) and fill in:
 - **Prompt**: The complete, ready-to-use prompt
 - **Example Use Case**: When to use this prompt
 - **Tags**: Relevant keywords for searchability
-- **Credits** (Optional): Attribution for creators, contributors, or inspiration sources
+- **Credits**: Attribution for creators, contributors, or inspiration sources
 
 **Note**: The category is automatically derived from the folder location, so you don't need to include it in the file.
 

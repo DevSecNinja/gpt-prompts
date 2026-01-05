@@ -1,0 +1,55 @@
+# Email Follow-up Tracker
+
+## Description
+
+Identifies sent emails that require follow-up by analyzing your sent items for questions, requests, or scheduling proposals that haven't received direct replies within a specified date range.
+
+## AI Model
+
+- Platform: Microsoft 365 Copilot
+- Note: Requires Microsoft 365 Copilot license
+
+## Prompt
+
+``` text
+Review my Sent Items from 2025-12-01 to 2025-12-31 and identify emails where I asked a question, requested information, proposed scheduling, or indicated I was expecting a response.
+
+Exclusions:
+
+- Newsletters, automated notifications, system emails, and any recipients with no-reply/DoNotReply addresses.
+
+Reply check (must be anchored to the specific sent message):
+
+- Consider an email “replied” only if there is an Inbox message:
+  1) in the same Conversation/Thread AND with DateTime > the sent email’s DateTime; AND
+  2) from one of the original TO recipients (ignore CC/BCC); AND
+  3) where In-Reply-To references the sent email’s Message-ID (when available).
+- Do NOT treat earlier messages in the thread as replies to my later sent email.
+
+Output:
+Create a table with columns:
+Date Sent | Recipient | Subject | Key Question/Request | Days Since Sent | Follow-up Priority (High/Medium/Low) | Received answered reply (Yes/No)
+
+Sort by “Days Since Sent” (oldest first) and include ONLY rows where the criteria above find no direct reply.
+```
+
+## Example Use Case
+
+Use this prompt at the end of each month to review all sent emails and identify which ones need follow-up. Particularly useful for tracking pending requests, unanswered questions, or proposed meetings that haven't been confirmed. Helps maintain professional communication and ensures important conversations don't slip through the cracks.
+
+## Tags
+
+- email-management
+- follow-up
+- productivity
+- communication-tracking
+- inbox-management
+- microsoft-365
+
+## Credits
+
+- Created by: @DevSecNinja
+
+## Notes
+
+Make sure to enable the `work` mode in Copilot and enable 'Think deeper'.
