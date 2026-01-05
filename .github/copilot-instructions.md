@@ -223,6 +223,16 @@ git diff
 3. Run index generation: `bash scripts/generate-index.sh` (to update description if changed)
 4. Commit all changes
 
+## Coding Style Preferences
+
+- **Avoid inline scripts**: Never use inline commands in pipelines or other configurations.
+- **Use external scripts**: Always create separate script files (e.g., `.devcontainer/post-create.sh`) for better:
+  - Readability and maintainability
+  - Version control and diffs
+  - Testing and debugging
+  - Reusability across projects
+- **Make scripts executable**: Run `chmod +x` on script files
+
 ## Environment
 
 - **OS**: Ubuntu 24.04.3 LTS (in dev container)
