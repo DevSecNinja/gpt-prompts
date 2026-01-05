@@ -27,14 +27,6 @@ get_description() {
   sed -n '/^## Description$/,/^##/p' "$1" | sed '1d;$d' | sed 's/^[[:space:]]*//' | head -n 1
 }
 
-# Function to get category from folder path
-get_category_from_path() {
-  local file_path="$1"
-  local dir_path=$(dirname "$file_path")
-  local category=$(basename "$dir_path")
-  echo "$category" | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g'
-}
-
 # Process prompts directory
 echo "" >> INDEX.md
 echo "## 📂 Regular Prompts" >> INDEX.md

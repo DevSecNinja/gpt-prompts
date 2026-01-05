@@ -16,23 +16,28 @@ for file in prompts/**/*.md .github/prompts/**/*.md; do
   if [ -f "$file" ]; then
     echo "Checking $file..."
     
+    FILE_VALID=1
+    
     # Check for required headers
     if ! grep -q "^# " "$file"; then
       echo "❌ Missing title (# heading) in $file"
       EXIT_CODE=1
+      FILE_VALID=0
     fi
     
     if ! grep -q "^## Description" "$file"; then
       echo "❌ Missing Description section in $file"
       EXIT_CODE=1
+      FILE_VALID=0
     fi
     
     if ! grep -q "^## Prompt" "$file"; then
       echo "❌ Missing Prompt section in $file"
       EXIT_CODE=1
+      FILE_VALID=0
     fi
     
-    if [ $EXIT_CODE -eq 0 ]; then
+    if [ $FILE_VALID -eq 1 ]; then
       echo "✅ $file is valid"
     fi
     echo ""
