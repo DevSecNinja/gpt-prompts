@@ -1,0 +1,7 @@
+{
+    "markdownlint.configFile": ".markdownlint.json",
+    "editor.formatOnSave": true,
+    "git.fetchOnPull": true,
+    "git.pruneOnFetch": true,
+    "git.autofetch": true
+}

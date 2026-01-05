@@ -1,0 +1,51 @@
+name: Generate Prompt Index
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'prompts/**/*.md'
+      - '.github/prompts/**/*.md'
+  pull_request:
+    paths:
+      - 'prompts/**/*.md'
+      - '.github/prompts/**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-index:
+    name: Generate Prompt Index
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate index
+        run: |
+          bash scripts/generate-index.sh
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code INDEX.md || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add INDEX.md
+          git commit -m "docs: Update prompt index [skip ci]"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            branch="${{ github.head_ref }}"
+          else
+            branch="${GITHUB_REF_NAME:-main}"
+          fi
+          git pull --rebase origin "$branch"
+          git push origin HEAD:"$branch"
