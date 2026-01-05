@@ -35,7 +35,7 @@ echo "" >> INDEX.md
 for category_dir in prompts/*/; do
   if [ -d "$category_dir" ]; then
     category_name=$(basename "$category_dir")
-    category_title=$(echo "$category_name" | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
+    category_title=$(echo "$category_name" | sed 's/-/ /g' | awk '{ for (i = 1; i <= NF; i++) { $i = toupper(substr($i, 1, 1)) substr($i, 2) } print }')
     
     # Check if there are any .md files
     if ls "$category_dir"*.md 1> /dev/null 2>&1; then
