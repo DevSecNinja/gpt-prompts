@@ -12,7 +12,7 @@ Identifies sent emails that require follow-up by analyzing your sent items for q
 ## Prompt
 
 ``` text
-Review my Sent Items from 2025-12-01 to 2025-12-31 and identify emails where I asked a question, requested information, proposed scheduling, or indicated I was expecting a response.
+Review my Sent Items from last month (first day to last day) and identify emails where I asked a question, requested information, proposed scheduling, or indicated I was expecting a response.
 
 Exclusions:
 
