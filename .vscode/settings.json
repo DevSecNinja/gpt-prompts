@@ -3,5 +3,7 @@
     "editor.formatOnSave": true,
     "git.fetchOnPull": true,
     "git.pruneOnFetch": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "git.autoStash": true,
+    "git.postCommitCommand": "sync"
 }
