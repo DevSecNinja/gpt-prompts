@@ -9,7 +9,7 @@ Last updated: 2026-01-05 12:12:57 UTC
 
 ### 📁 Analysis
 
-- **[Data Analysis Assistant](/prompts/analysis/data-analysis.md)** - Analyze datasets and provide insights, visualizations suggestions, and statistical interpretations.
+- **[Data Analysis Assistant](/prompts/analysis/data-analysis.md)** - Analyze datasets and provide insights, visualization suggestions, and statistical interpretations.
 
 ### 📁 Coding
 
