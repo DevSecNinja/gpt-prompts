@@ -6,6 +6,10 @@ on:
     paths:
       - 'prompts/**/*.md'
       - '.github/prompts/**/*.md'
+  pull_request:
+    paths:
+      - 'prompts/**/*.md'
+      - '.github/prompts/**/*.md'
   workflow_dispatch:
 
 permissions:
@@ -38,6 +42,10 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add INDEX.md
           git commit -m "docs: Update prompt index [skip ci]"
-          branch="${GITHUB_REF_NAME:-main}"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            branch="${{ github.head_ref }}"
+          else
+            branch="${GITHUB_REF_NAME:-main}"
+          fi
           git pull --rebase origin "$branch"
-          git push
+          git push origin HEAD:"$branch"

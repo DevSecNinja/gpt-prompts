@@ -2,9 +2,9 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-05 12:12:57 UTC
+Last updated: 2026-01-05 13:44:04 UTC
 
-## 📂 Regular Prompts
+## 📂 Prompts
 
 ### 📁 Analysis
 
