@@ -16,7 +16,7 @@ echo ""
 
 # Check prompts directory
 for file in prompts/**/*.md .github/prompts/**/*.md; do
-  # Skip if no files match (nullglob handles this, but keeping check for clarity)
+  # Skip if not a regular file (nullglob prevents literal pattern iteration)
   [ -f "$file" ] || continue
   
   echo "Checking $file..."
