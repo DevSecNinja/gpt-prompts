@@ -25,7 +25,7 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: node_modules
-          version: '0.32.2'
+          version: 'latest'
 
   markdown-link-check:
     name: Check Markdown Links
