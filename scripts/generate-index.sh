@@ -17,18 +17,53 @@ Last updated: $(TZ=UTC date '+%Y-%m-%d %H:%M:%S %Z')
 
 EOF
 
+# Function to check if file has YAML frontmatter
+has_frontmatter() {
+  head -n 1 "$1" | grep -q "^---$"
+}
+
+# Function to extract description from YAML frontmatter
+get_frontmatter_description() {
+  awk '
+    BEGIN { in_frontmatter=0; description="" }
+    NR==1 && /^---$/ { in_frontmatter=1; next }
+    in_frontmatter && /^---$/ { exit }
+    in_frontmatter && /^description:/ {
+      sub(/^description: */, "")
+      gsub(/^['\''"]|['\''"]$/, "")
+      print
+      exit
+    }
+  ' "$1"
+}
+
+# Function to get title from filename (convert to readable format)
+get_title_from_filename() {
+  local filename=$(basename "$1" .md)
+  filename=$(basename "$filename" .prompt)
+  echo "$filename" | sed 's/-/ /g' | awk '{ for (i = 1; i <= NF; i++) { $i = toupper(substr($i, 1, 1)) substr($i, 2) } print }'
+}
+
 # Function to extract title from markdown
 get_title() {
-  grep -m 1 "^# " "$1" | sed 's/^# //'
+  if has_frontmatter "$1"; then
+    get_title_from_filename "$1"
+  else
+    grep -m 1 "^# " "$1" | sed 's/^# //'
+  fi
 }
 
 # Function to extract description
 get_description() {
-  awk '
-    /^## Description$/ { in_desc=1; next }
-    /^## / { in_desc=0 }
-    in_desc && NF > 0 { print; exit }
-  ' "$1" | sed 's/^[[:space:]]*//'
+  if has_frontmatter "$1"; then
+    get_frontmatter_description "$1"
+  else
+    awk '
+      /^## Description$/ { in_desc=1; next }
+      /^## / { in_desc=0 }
+      in_desc && NF > 0 { print; exit }
+    ' "$1" | sed 's/^[[:space:]]*//'
+  fi
 }
 
 # Process prompts directory

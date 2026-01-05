@@ -40,7 +40,7 @@ A well-organized repository of reusable GPT prompts to supercharge your AI inter
 
 > Prompts optimized for use with GitHub Copilot
 
-- **[Unit Test Generator](/.github/prompts/unit-test-generator.md)** - Generate comprehensive unit tests for code with proper setup, assertions, and edge case coverage.
+- **[Copilot Onboarding](/.github/prompts/copilot-onboarding.prompt.md)** - Onboard this repository to Copilot
 <!-- INDEX_END -->
 
 ## 🤝 Contributing

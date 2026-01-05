@@ -2,7 +2,7 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-05 15:15:41 UTC
+Last updated: 2026-01-05 15:35:23 UTC
 
 ## 📂 Prompts
 
@@ -23,7 +23,7 @@ Last updated: 2026-01-05 15:15:41 UTC
 
 > Prompts optimized for use with GitHub Copilot
 
-- **[Unit Test Generator](/.github/prompts/unit-test-generator.md)** - Generate comprehensive unit tests for code with proper setup, assertions, and edge case coverage.
+- **[Copilot Onboarding](/.github/prompts/copilot-onboarding.prompt.md)** - Onboard this repository to Copilot
 
 ---
 
