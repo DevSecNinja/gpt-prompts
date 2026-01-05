@@ -33,14 +33,14 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code INDEX.md || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code INDEX.md README.md || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add INDEX.md
+          git add INDEX.md README.md
           git commit -m "docs: Update prompt index [skip ci]"
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             branch="${{ github.head_ref }}"
