@@ -38,4 +38,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add INDEX.md
           git commit -m "docs: Update prompt index [skip ci]"
+          branch="${GITHUB_REF_NAME:-main}"
+          git pull --rebase origin "$branch"
           git push
