@@ -24,7 +24,11 @@ get_title() {
 
 # Function to extract description
 get_description() {
-  sed -n '/^## Description$/,/^##/p' "$1" | sed '1d;$d' | sed 's/^[[:space:]]*//' | head -n 1
+  awk '
+    /^## Description$/ { in_desc=1; next }
+    /^## / { in_desc=0 }
+    in_desc { print }
+  ' "$1" | sed 's/^[[:space:]]*//' | head -n 1
 }
 
 # Process prompts directory
