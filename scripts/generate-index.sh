@@ -13,7 +13,7 @@ cat > INDEX.md << EOF
 
 > Auto-generated index of all available prompts
 
-Last updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+Last updated: $(TZ=UTC date '+%Y-%m-%d %H:%M:%S %Z')
 
 EOF
 
