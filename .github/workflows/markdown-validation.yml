@@ -3,8 +3,13 @@ name: Markdown Validation
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'prompts/**/*.md'
+      - '.github/prompts/**/*.md'
   pull_request:
-    branches: [ main ]
+    paths:
+      - 'prompts/**/*.md'
+      - '.github/prompts/**/*.md'
 
 permissions:
   contents: read
@@ -25,7 +30,6 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: node_modules
-          version: 'latest'
 
   markdown-link-check:
     name: Check Markdown Links

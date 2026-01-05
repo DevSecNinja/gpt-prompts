@@ -12,6 +12,11 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
+    # Skip welcome message for repository owner and bots (including Copilot)
+    if: |
+      github.actor != github.repository_owner &&
+      !contains(github.actor, 'copilot') &&
+      !contains(github.actor, '[bot]')
     
     steps:
       - name: Welcome new contributor
