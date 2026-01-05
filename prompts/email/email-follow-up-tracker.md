@@ -28,9 +28,9 @@ Reply check (must be anchored to the specific sent message):
 
 Output:
 Create a table with columns:
-Date Sent | Recipient | Subject | Key Question/Request | Days Since Sent | Follow-up Priority (High/Medium/Low) | Received answered reply (Yes/No)
+Date Sent | Recipient (Organization) | Subject | Key Question/Request | Days Since Sent | Follow-up Priority (High/Medium/Low) | Received answered reply (Yes/No)
 
-Sort by “Days Since Sent” (oldest first) and include ONLY rows where the criteria above find no direct reply.
+Sort by “Days Since Sent” (oldest first) and include ONLY rows where the criteria above find no direct reply.  Show a counter of how many emails you have found.
 ```
 
 ## Example Use Case
