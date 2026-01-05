@@ -1,8 +1,5 @@
 # Code Review Assistant
 
-## Category
-Coding
-
 ## Description
 A prompt for conducting thorough code reviews with focus on best practices, security, and maintainability.
 

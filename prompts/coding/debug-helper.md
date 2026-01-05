@@ -1,8 +1,5 @@
 # Debug Helper
 
-## Category
-Coding
-
 ## Description
 A systematic approach to debugging code issues with step-by-step troubleshooting.
 

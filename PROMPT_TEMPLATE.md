@@ -1,8 +1,5 @@
 # [Prompt Title]
 
-## Category
-[Choose: Coding / Writing / Analysis / Creative / Business / Other]
-
 ## Description
 [Brief 1-2 sentence description of what this prompt does]
 

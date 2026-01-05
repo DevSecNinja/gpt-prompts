@@ -1,8 +1,5 @@
 # Data Analysis Assistant
 
-## Category
-Analysis
-
 ## Description
 Analyze datasets and provide insights, visualizations suggestions, and statistical interpretations.
 

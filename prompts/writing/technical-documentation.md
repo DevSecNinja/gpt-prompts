@@ -1,8 +1,5 @@
 # Technical Documentation Writer
 
-## Category
-Writing
-
 ## Description
 Generate clear, comprehensive technical documentation for code, APIs, or systems.
 

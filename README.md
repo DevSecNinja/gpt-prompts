@@ -14,6 +14,7 @@ A well-organized repository of reusable GPT prompts to supercharge your AI inter
 - **💻 Coding** - Code review, debugging, refactoring, and development assistance
 - **✍️ Writing** - Documentation, content creation, and technical writing
 - **📊 Analysis** - Data analysis, insights generation, and research
+- **🤖 GitHub Copilot** - Prompts optimized for GitHub Copilot (in `.github/prompts/`)
 
 ## 🎯 Quick Start
 
@@ -29,6 +30,7 @@ A well-organized repository of reusable GPT prompts to supercharge your AI inter
 - [Debug Helper](/prompts/coding/debug-helper.md) - Systematic debugging approach
 - [Technical Documentation](/prompts/writing/technical-documentation.md) - Create comprehensive docs
 - [Data Analysis](/prompts/analysis/data-analysis.md) - Analyze and visualize data
+- [Unit Test Generator](/.github/prompts/unit-test-generator.md) - Generate comprehensive unit tests (GitHub Copilot)
 
 ## 🤝 Contributing
 

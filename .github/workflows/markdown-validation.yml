@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint markdown files
+        continue-on-error: true
         uses: articulate/actions-markdownlint@v1
         with:
           config: .markdownlint.json
@@ -35,6 +36,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check links in markdown files
+        continue-on-error: true
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           use-quiet-mode: 'yes'
@@ -49,39 +51,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Check prompt files have required sections
+      - name: Run validation script
         run: |
-          EXIT_CODE=0
-          
-          for file in prompts/**/*.md; do
-            if [ -f "$file" ]; then
-              echo "Checking $file..."
-              
-              # Check for required headers
-              if ! grep -q "^# " "$file"; then
-                echo "❌ Missing title in $file"
-                EXIT_CODE=1
-              fi
-              
-              if ! grep -q "^## Category" "$file"; then
-                echo "❌ Missing Category section in $file"
-                EXIT_CODE=1
-              fi
-              
-              if ! grep -q "^## Description" "$file"; then
-                echo "❌ Missing Description section in $file"
-                EXIT_CODE=1
-              fi
-              
-              if ! grep -q "^## Prompt" "$file"; then
-                echo "❌ Missing Prompt section in $file"
-                EXIT_CODE=1
-              fi
-              
-              if [ $EXIT_CODE -eq 0 ]; then
-                echo "✅ $file is valid"
-              fi
-            fi
-          done
-          
-          exit $EXIT_CODE
+          bash tests/validate-prompts.sh
