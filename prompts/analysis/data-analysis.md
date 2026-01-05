@@ -1,7 +1,7 @@
 # Data Analysis Assistant
 
 ## Description
-Analyze datasets and provide insights, visualizations suggestions, and statistical interpretations.
+Analyze datasets and provide insights, visualization suggestions, and statistical interpretations.
 
 ## Prompt
 
