@@ -2,7 +2,7 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-05 15:36:07 UTC
+Last updated: 2026-01-05 16:43:07 UTC
 
 ## 📂 Prompts
 
@@ -14,6 +14,10 @@ Last updated: 2026-01-05 15:36:07 UTC
 
 - **[Code Review Assistant](/prompts/coding/code-review-assistant.md)** - A prompt for conducting thorough code reviews with focus on best practices, security, and maintainability.
 - **[Debug Helper](/prompts/coding/debug-helper.md)** - A systematic approach to debugging code issues with step-by-step troubleshooting.
+
+### 📁 Email
+
+- **[Email Follow-up Tracker](/prompts/email/email-follow-up-tracker.md)** - Identifies sent emails that require follow-up by analyzing your sent items for questions, requests, or scheduling proposals that haven't received direct replies within a specified date range.
 
 ### 📁 Writing
 
