@@ -12,7 +12,7 @@ Identifies sent emails that require follow-up by analyzing your sent items for q
 ## Prompt
 
 ``` text
-Review my Sent Items from last month (first day to last day) and identify emails where I asked a question, requested information, proposed scheduling, or indicated I was expecting a response.
+Review my Sent Items from last month (first day to last day) and identify emails where I asked a question, requested information, proposed scheduling, or indicated I was expecting a response — and where NO direct reply was received according to the anchored‑reply rules below.
 
 Exclusions:
 
@@ -20,17 +20,18 @@ Exclusions:
 
 Reply check (must be anchored to the specific sent message):
 
-- Consider an email “replied” only if there is an Inbox message:
+- Consider an email 'replied' only if there is an Inbox message:
   1) in the same Conversation/Thread AND with DateTime > the sent email’s DateTime; AND
   2) from one of the original TO recipients (ignore CC/BCC); AND
   3) where In-Reply-To references the sent email’s Message-ID (when available).
 - Do NOT treat earlier messages in the thread as replies to my later sent email.
+- The replied email can also be sent later than the mentioned date range, as long as it meets the above criteria.
 
 Output:
 Create a table with columns:
 Date Sent | Recipient (Organization) | Subject | Key Question/Request | Days Since Sent | Follow-up Priority (High/Medium/Low) | Received answered reply (Yes/No)
 
-Sort by “Days Since Sent” (oldest first) and include ONLY rows where the criteria above find no direct reply.  Show a counter of how many emails you have found.
+Sort by "Days Since Sent" (oldest first) and include ONLY rows where the criteria above find no direct reply.  Show a counter of how many emails you have found.
 ```
 
 ## Example Use Case
