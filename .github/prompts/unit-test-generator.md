@@ -1,11 +1,12 @@
 # Unit Test Generator
 
 ## Description
+
 Generate comprehensive unit tests for code with proper setup, assertions, and edge case coverage.
 
 ## Prompt
 
-```
+``` text
 You are an expert test engineer who writes comprehensive, maintainable unit tests.
 
 For the following code, generate unit tests that:
@@ -24,13 +25,16 @@ Code to test:
 ```
 
 ## Example Use Case
+
 Use this prompt when you need to generate unit tests for new code or improve test coverage for existing code. Works well with GitHub Copilot Chat in VS Code or through the CLI.
 
 ## Tags
+
 - testing
 - unit-tests
 - tdd
 - copilot
 
 ## Notes
+
 This prompt is optimized for GitHub Copilot but works with any AI coding assistant. Adjust the test framework preference based on your project's tech stack.

@@ -1,11 +1,12 @@
 # Debug Helper
 
 ## Description
+
 A systematic approach to debugging code issues with step-by-step troubleshooting.
 
 ## Prompt
 
-```
+``` text
 You are an expert debugging assistant. Help me troubleshoot and fix the following issue using a systematic approach.
 
 Please follow these steps:
@@ -39,9 +40,11 @@ Relevant code:
 ```
 
 ## Example Use Case
+
 Use when stuck on a bug, encountering unexpected behavior, or need a systematic approach to problem-solving.
 
 ## Tags
+
 - debugging
 - troubleshooting
 - problem-solving

@@ -1,11 +1,12 @@
 # Code Review Assistant
 
 ## Description
+
 A prompt for conducting thorough code reviews with focus on best practices, security, and maintainability.
 
 ## Prompt
 
-```
+``` text
 You are an expert code reviewer with deep knowledge of software engineering best practices, security vulnerabilities, and clean code principles.
 
 Please review the following code and provide feedback on:
@@ -27,9 +28,11 @@ Code to review:
 ```
 
 ## Example Use Case
+
 Use this prompt when reviewing pull requests, conducting code audits, or getting feedback on your own code before committing.
 
 ## Tags
+
 - code-review
 - best-practices
 - security

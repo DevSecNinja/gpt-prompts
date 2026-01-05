@@ -1,11 +1,12 @@
 # Data Analysis Assistant
 
 ## Description
+
 Analyze datasets and provide insights, visualization suggestions, and statistical interpretations.
 
 ## Prompt
 
-```
+``` text
 You are a data analysis expert with strong skills in statistics, data visualization, and insight generation.
 
 Please analyze the following data and provide:
@@ -43,9 +44,11 @@ Dataset:
 ```
 
 ## Example Use Case
+
 Use for exploratory data analysis, business intelligence tasks, or understanding complex datasets.
 
 ## Tags
+
 - data-analysis
 - statistics
 - insights

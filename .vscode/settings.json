@@ -1,0 +1,4 @@
+{
+    "markdownlint.configFile": ".markdownlint.json",
+    "editor.formatOnSave": true
+}

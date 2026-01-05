@@ -4,7 +4,6 @@
 
 Last updated: 2026-01-05 12:12:57 UTC
 
-
 ## 📂 Regular Prompts
 
 ### 📁 Analysis
@@ -20,13 +19,11 @@ Last updated: 2026-01-05 12:12:57 UTC
 
 - **[Technical Documentation Writer](/prompts/writing/technical-documentation.md)** - Generate clear, comprehensive technical documentation for code, APIs, or systems.
 
-
 ## 🤖 GitHub Copilot Prompts
 
 > Prompts optimized for use with GitHub Copilot
 
 - **[Unit Test Generator](/.github/prompts/unit-test-generator.md)** - Generate comprehensive unit tests for code with proper setup, assertions, and edge case coverage.
-
 
 ---
 

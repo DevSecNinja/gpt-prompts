@@ -63,6 +63,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find these prompts helpful, please star this repository and share it with others!
 
----
-
+<!-- markdownlint-disable-next-line MD036 -->
 **Made with ❤️ by the community**

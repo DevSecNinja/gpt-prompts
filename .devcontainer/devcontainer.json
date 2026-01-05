@@ -4,7 +4,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "davidanson.vscode-markdownlint"
+        "davidanson.vscode-markdownlint",
+        "GitHub.vscode-github-actions"
       ]
     }
   }

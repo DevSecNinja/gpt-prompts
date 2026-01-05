@@ -1,11 +1,12 @@
 # Technical Documentation Writer
 
 ## Description
+
 Generate clear, comprehensive technical documentation for code, APIs, or systems.
 
 ## Prompt
 
-```
+``` text
 You are a technical documentation expert who creates clear, comprehensive, and user-friendly documentation.
 
 Please create documentation for the following with these sections:
@@ -31,9 +32,11 @@ Subject to document:
 ```
 
 ## Example Use Case
+
 Use for creating README files, API documentation, user guides, or internal technical specifications.
 
 ## Tags
+
 - documentation
 - technical-writing
 - api-docs

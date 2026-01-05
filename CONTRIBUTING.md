@@ -7,6 +7,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 ### 1. Choose Your Category
 
 Place your prompt in the appropriate folder:
+
 - `prompts/coding/` - Development, debugging, code review
 - `prompts/writing/` - Documentation, content, technical writing
 - `prompts/analysis/` - Data analysis, research, insights
@@ -17,6 +18,7 @@ Place your prompt in the appropriate folder:
 ### 2. Use the Template
 
 Copy [`PROMPT_TEMPLATE.md`](/PROMPT_TEMPLATE.md) and fill in:
+
 - **Title**: Clear, descriptive name
 - **Description**: Brief overview (1-2 sentences)
 - **Prompt**: The complete, ready-to-use prompt
@@ -28,6 +30,7 @@ Copy [`PROMPT_TEMPLATE.md`](/PROMPT_TEMPLATE.md) and fill in:
 ### 3. File Naming
 
 Use lowercase with hyphens:
+
 - ✅ `code-review-assistant.md`
 - ✅ `api-documentation-generator.md`
 - ❌ `Code Review Assistant.md`
@@ -36,6 +39,7 @@ Use lowercase with hyphens:
 ### 4. Quality Guidelines
 
 **Good prompts are:**
+
 - ✨ **Clear and Specific** - Leave no ambiguity
 - 🎯 **Action-Oriented** - Tell the AI what to do
 - 📊 **Well-Structured** - Use numbered lists or sections
@@ -43,6 +47,7 @@ Use lowercase with hyphens:
 - ♻️ **Reusable** - Work for multiple scenarios
 
 **Avoid:**
+
 - ❌ Vague or generic prompts
 - ❌ Overly complex instructions
 - ❌ Personal or sensitive information
@@ -51,6 +56,7 @@ Use lowercase with hyphens:
 ### 5. Testing Your Prompt
 
 Before submitting:
+
 1. Test the prompt with an AI assistant
 2. Verify it produces useful results
 3. Refine based on the output
@@ -68,6 +74,7 @@ Before submitting:
 ## 📝 Pull Request Guidelines
 
 Your PR description should include:
+
 - Brief explanation of what the prompt does
 - Why it's useful (use case)
 - Any testing or validation you've done
@@ -82,6 +89,7 @@ Your PR description should include:
 ## ❓ Questions?
 
 Open an issue if you:
+
 - Need help with formatting
 - Want to suggest a new category
 - Have questions about prompt quality
