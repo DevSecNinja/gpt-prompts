@@ -1,0 +1,44 @@
+name: Welcome
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    
+    steps:
+      - name: Welcome new contributor
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Welcome to the GPT Prompts Collection!
+            
+            Thank you for opening your first issue! We appreciate your contribution to making this collection better.
+            
+            A maintainer will review your issue soon. In the meantime:
+            - Make sure you've provided enough context
+            - Check if there are similar existing issues
+            - Feel free to add more information if needed
+            
+          pr-message: |
+            🎉 Thank you for your first contribution!
+            
+            We're excited to have you as part of our community. Your pull request will be reviewed soon.
+            
+            Please make sure:
+            - ✅ Your prompt follows the template structure
+            - ✅ It's placed in the correct category folder
+            - ✅ The filename uses lowercase-with-hyphens format
+            - ✅ You've tested the prompt and it produces useful results
+            
+            Check out [CONTRIBUTING.md](https://github.com/DevSecNinja/gpt-prompts/blob/main/CONTRIBUTING.md) for detailed guidelines.
+            
+            Thanks again for making this collection better! 🚀
