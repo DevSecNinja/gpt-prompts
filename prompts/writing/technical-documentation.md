@@ -35,6 +35,10 @@ Subject to document:
 
 Use for creating README files, API documentation, user guides, or internal technical specifications.
 
+## Credits
+
+Written by GitHub Copilot (Claude Sonnet 4.5)
+
 ## Tags
 
 - documentation

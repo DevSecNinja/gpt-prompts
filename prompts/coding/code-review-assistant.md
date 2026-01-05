@@ -31,6 +31,10 @@ Code to review:
 
 Use this prompt when reviewing pull requests, conducting code audits, or getting feedback on your own code before committing.
 
+## Credits
+
+Written by GitHub Copilot (Claude Sonnet 4.5)
+
 ## Tags
 
 - code-review

@@ -47,6 +47,10 @@ Dataset:
 
 Use for exploratory data analysis, business intelligence tasks, or understanding complex datasets.
 
+## Credits
+
+Written by GitHub Copilot (Claude Sonnet 4.5)
+
 ## Tags
 
 - data-analysis

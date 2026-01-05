@@ -24,6 +24,15 @@
 - [tag2]
 - [tag3]
 
+## Credits (Optional)
+
+[Attribution for the prompt creator(s) or sources. Examples:
+
+- Created by: [Your Name]
+- Inspired by: [Source]
+- Contributors: [Names]
+]
+
 ## Notes (Optional)
 
 [Any additional context, variations, or tips for using this prompt]

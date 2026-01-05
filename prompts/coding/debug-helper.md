@@ -43,6 +43,10 @@ Relevant code:
 
 Use when stuck on a bug, encountering unexpected behavior, or need a systematic approach to problem-solving.
 
+## Credits
+
+Written by GitHub Copilot (Claude Sonnet 4.5)
+
 ## Tags
 
 - debugging
