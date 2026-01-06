@@ -2,7 +2,7 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-05 18:46:31 UTC
+Last updated: 2026-01-06 08:28:40 UTC
 
 ## 📂 Prompts
 
@@ -18,6 +18,10 @@ Last updated: 2026-01-05 18:46:31 UTC
 ### 📁 Email
 
 - **[Email Follow-up Tracker](/prompts/email/email-follow-up-tracker.md)** - Identifies sent emails that require follow-up by analyzing your sent items for questions, requests, or scheduling proposals that haven't received direct replies within a specified date range.
+
+### 📁 Home Assistant
+
+- **[Home Assistant Automation Renamer](/prompts/home-assistant/automation-renamer.md)** - This prompt helps rewrite Home Assistant automation aliases and descriptions into clear, non-technical language that anyone in your household can understand, without changing any automation logic.
 
 ### 📁 Writing
 
