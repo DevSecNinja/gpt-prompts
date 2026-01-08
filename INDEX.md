@@ -2,7 +2,7 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-06 08:28:40 UTC
+Last updated: 2026-01-08 09:14:40 UTC
 
 ## 📂 Prompts
 
@@ -22,6 +22,7 @@ Last updated: 2026-01-06 08:28:40 UTC
 ### 📁 Home Assistant
 
 - **[Home Assistant Automation Renamer](/prompts/home-assistant/automation-renamer.md)** - This prompt helps rewrite Home Assistant automation aliases and descriptions into clear, non-technical language that anyone in your household can understand, without changing any automation logic.
+- **[Home Assistant Notification Optimizer](/prompts/home-assistant/notification-optimizer.md)** - Optimizes Home Assistant automation notifications for Apple Watch and iPhone by rewriting titles and messages to be concise, glanceable, and follow Apple's notification best practices.
 
 ### 📁 Writing
 
