@@ -73,3 +73,7 @@ Use this prompt when your Home Assistant automations.yaml file has grown organic
 - Focus is on notify.* service calls only; all other automation logic remains unchanged
 - Best used with AI assistants that have direct file editing capabilities in your workspace
 - Can be adapted for Android or other notification platforms by modifying the platform-specific guidelines
+
+## Feedback
+
+Have suggestions or found an issue with this prompt? [Click here to provide feedback](https://github.com/DevSecNinja/gpt-prompts/issues/new?title=Feedback%3A%20%5Bhome-assistant%5D%20Home%20Assistant%20Notification%20Optimizer&body=%23%23%20Feedback%20for%3A%20Home%20Assistant%20Notification%20Optimizer%0A%0A%2A%2APrompt%20location%2A%2A%3A%20%5Bprompts%2Fhome-assistant%2Fnotification-optimizer.md%5D%28https%3A%2F%2Fgithub.com%2FDevSecNinja%2Fgpt-prompts%2Fblob%2Fmain%2Fprompts%2Fhome-assistant%2Fnotification-optimizer.md%29%0A%0A%2A%2ACategory%2A%2A%3A%20home-assistant%0A%2A%2APrompt%20name%2A%2A%3A%20notification-optimizer%0A%0A---%0A%0A%3C%21--%20Please%20provide%20your%20feedback%20below%20--%3E%0A%0A&labels=enhancement).

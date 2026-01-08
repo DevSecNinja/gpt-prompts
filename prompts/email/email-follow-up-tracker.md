@@ -54,3 +54,7 @@ Use this prompt at the end of each month to review all sent emails and identify 
 ## Notes
 
 Make sure to enable the `work` mode in Copilot and enable 'Think deeper'.
+
+## Feedback
+
+Have suggestions or found an issue with this prompt? [Click here to provide feedback](https://github.com/DevSecNinja/gpt-prompts/issues/new?title=Feedback%3A%20%5Bemail%5D%20Email%20Follow-up%20Tracker&body=%23%23%20Feedback%20for%3A%20Email%20Follow-up%20Tracker%0A%0A%2A%2APrompt%20location%2A%2A%3A%20%5Bprompts%2Femail%2Femail-follow-up-tracker.md%5D%28https%3A%2F%2Fgithub.com%2FDevSecNinja%2Fgpt-prompts%2Fblob%2Fmain%2Fprompts%2Femail%2Femail-follow-up-tracker.md%29%0A%0A%2A%2ACategory%2A%2A%3A%20email%0A%2A%2APrompt%20name%2A%2A%3A%20email-follow-up-tracker%0A%0A---%0A%0A%3C%21--%20Please%20provide%20your%20feedback%20below%20--%3E%0A%0A&labels=enhancement).
