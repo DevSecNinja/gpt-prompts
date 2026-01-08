@@ -6,8 +6,8 @@ This prompt helps rewrite Home Assistant automation aliases and descriptions int
 
 ## AI Model
 
-- Platform: ChatGPT, Claude, or any GPT-4 class model
-- Model: GPT-4 or Claude Sonnet recommended for best results
+- Platform: GitHub Copilot in VS Code
+- Model: Claude Sonnet 4.5
 
 ## Prompt
 
