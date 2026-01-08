@@ -5,5 +5,6 @@
     "git.pruneOnFetch": true,
     "git.autofetch": true,
     "git.autoStash": true,
-    "git.postCommitCommand": "sync"
+    "git.postCommitCommand": "sync",
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }
