@@ -25,8 +25,14 @@ Copy [`PROMPT_TEMPLATE.md`](/PROMPT_TEMPLATE.md) and fill in:
 - **Example Use Case**: When to use this prompt
 - **Tags**: Relevant keywords for searchability
 - **Credits**: Attribution for creators, contributors, or inspiration sources
+- **Feedback Link**: Update the placeholders in the feedback link with your category, prompt name, and title
 
 **Note**: The category is automatically derived from the folder location, so you don't need to include it in the file.
+
+**Feedback Link**: The template includes a feedback section with a GitHub issue link. Replace the placeholders:
+- `[CATEGORY]` - Your folder name (e.g., "coding", "home-assistant")
+- `[PROMPT-NAME]` - Your filename without .md (e.g., "code-review-assistant")
+- `[PROMPT-TITLE]` - URL-encoded version of your prompt title (spaces as `%20`)
 
 ### 3. File Naming
 
