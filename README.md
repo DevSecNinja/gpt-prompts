@@ -43,6 +43,7 @@ An organized repository of reusable GPT prompts to supercharge your AI interacti
 
 > Prompts optimized for use with GitHub Copilot
 
+- **[Copilot Generate Informal Message](/.github/prompts/copilot-generate-informal-message.prompt.md)** - Creates an informal message to share a prompt from the repository with your team
 - **[Copilot Onboarding](/.github/prompts/copilot-onboarding.prompt.md)** - Onboard this repository to Copilot
 <!-- INDEX_END -->
 
