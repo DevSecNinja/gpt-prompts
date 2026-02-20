@@ -34,6 +34,7 @@ An organized repository of reusable GPT prompts to supercharge your AI interacti
 ### 📁 Productivity
 
 - **[Email Follow-up Tracker](/prompts/productivity/email-follow-up-tracker.md)** - Identifies sent emails that require follow-up by analyzing your sent items for questions, requests, or scheduling proposals that haven't received direct replies within a specified date range.
+- **[OOO Task Handoff Planner](/prompts/productivity/ooo-task-handoff-planner.md)** - Scans your recent emails to identify tasks requiring action before, during, or after an out-of-office period, then groups them into prioritized handoff buckets with delegates and deadlines.
 
 ### 📁 Writing
 
