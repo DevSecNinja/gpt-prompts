@@ -2,7 +2,7 @@
 
 > Auto-generated index of all available prompts
 
-Last updated: 2026-01-13 08:28:30 UTC
+Last updated: 2026-02-20 07:58:41 UTC
 
 ## 📂 Prompts
 
@@ -32,6 +32,7 @@ Last updated: 2026-01-13 08:28:30 UTC
 
 > Prompts optimized for use with GitHub Copilot
 
+- **[Copilot Add Prompt](/.github/prompts/copilot-add-prompt.prompt.md)** - Add a new GPT prompt to the collection by filling in the template and placing it in the correct category
 - **[Copilot Generate Informal Message](/.github/prompts/copilot-generate-informal-message.prompt.md)** - Creates an informal message to share a prompt from the repository with your team
 - **[Copilot Onboarding](/.github/prompts/copilot-onboarding.prompt.md)** - Onboard this repository to Copilot
 
